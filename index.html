@@ -14,7 +14,72 @@
   <body>
     <header>
       <div class="container">
-        <div class="row"></div>
+        <nav
+          class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+          data-bs-theme="dark"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
@@ -30,17 +95,24 @@
       <section>
         <div class="container">
           <button type="button" class="btn btn-primary btn-sm">Primary</button>
-          <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-danger">Danger</button>
-          <button type="button" class="btn btn-warning">Warning</button>
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-light">Light</button>
-          <button type="button" class="btn btn-dark">Dark</button>
+          <button type="button" class="btn btn-secondary btn-lg">
+            Secondary
+          </button>
+          <button type="button" class="btn btn-success p-3">Success</button>
+          <button type="button" class="btn btn-danger py-3 px-4">Danger</button>
+          <button type="button" class="btn btn-warning shadow-sm">
+            Warning
+          </button>
+          <button type="button" class="btn btn-info shadow">Info</button>
+          <button type="button" class="btn btn-light shadow-lg">Light</button>
+          <button type="button" class="btn btn-dark d-lg-none">Dark</button>
 
           <button type="button" class="btn btn-link">Link</button>
 
-          <button type="button" class="btn btn-outline-danger">Danger</button>
+          <button type="button" class="btn btn-danger d-none d-md-inline-block">
+            Danger
+          </button>
+          <div class="mx auto" style="width: 200px">center</div>
         </div>
       </section>
       <section>
@@ -65,10 +137,341 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="container">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgByBT5IiAT_a2x9pUVb4VMoOrlzHH7Jrzj-HB5jzHlR4lNLMS"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <p class="text-start">Start aligned text on all viewport sizes.</p>
+        <p class="text-center">Center aligned text on all viewport sizes.</p>
+        <p class="text-end">End aligned text on all viewport sizes.</p>
+
+        <p class="text-sm-end">
+          End aligned text on viewports sized SM (small) or wider.
+        </p>
+        <p class="text-md-end">
+          End aligned text on viewports sized MD (medium) or wider.
+        </p>
+        <p class="text-lg-end">
+          End aligned text on viewports sized LG (large) or wider.
+        </p>
+        <p class="text-xl-end">
+          End aligned text on viewports sized XL (extra large) or wider.
+        </p>
+        <p class="text-xxl-end">
+          End aligned text on viewports sized XXL (extra extra large) or wider.
+        </p>
+        <p class="text-lowercase">Lowercased text.</p>
+        <p class="text-uppercase">Uppercased text.</p>
+        <p class="text-capitalize">CapiTaliZed text.</p>
+        <p class="fs-1">.fs-1 text</p>
+        <p class="fs-2">.fs-2 text</p>
+        <p class="fs-3">.fs-3 text</p>
+        <p class="fs-4">.fs-4 text</p>
+        <p class="fs-5">.fs-5 text</p>
+        <p class="fs-6">.fs-6 text</p>
+        <p class="fw-bold">Bold text.</p>
+        <p class="fw-bolder">
+          Bolder weight text (relative to the parent element).
+        </p>
+        <p class="fw-semibold">Semibold weight text.</p>
+        <p class="fw-medium">Medium weight text.</p>
+        <p class="fw-normal">Normal weight text.</p>
+        <p class="fw-light">Light weight text.</p>
+        <p class="fw-lighter">
+          Lighter weight text (relative to the parent element).
+        </p>
+        <p class="fst-italic">Italic text.</p>
+        <p class="fst-normal">Text with normal font style</p>
+        <br />
+        <div class="w-25 p-3" style="background-color: #eee">Ширина 25%</div>
+        <div class="w-50 p-3" style="background-color: #eee">Ширина 50%</div>
+        <div class="w-75 p-3" style="background-color: #eee">Ширина 75%</div>
+        <div class="w-100 p-3" style="background-color: #eee">Ширина 100%</div>
+        <div class="w-auto p-3" style="background-color: #eee">Ширина auto</div>
+        <br />
+        <div style="height: 100px; background-color: rgba(255, 0, 0, 0.1)">
+          <div
+            class="h-25 d-inline-block"
+            style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+          >
+            Висота 25%
+          </div>
+          <div
+            class="h-50 d-inline-block"
+            style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+          >
+            Висота 50%
+          </div>
+          <div
+            class="h-75 d-inline-block"
+            style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+          >
+            Висота 75%
+          </div>
+          <div
+            class="h-100 d-inline-block"
+            style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+          >
+            Висота 100%
+          </div>
+          <div
+            class="h-auto d-inline-block"
+            style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+          >
+            Висота auto
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
         <div class="row"></div>
+      </div>
+    </footer>
+    <br />
+    <br />
+    <header class="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Cat.sale</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section row ">
+
+        <aside class="aside col-12 col-md-3 d-flex justify-content-center aling-items-center ">
+          <div class="card align-self-center shadow" style="width: 20rem">
+            <img src="https://i.pinimg.com/564x/20/f9/03/20f9039e93d75d42b874948920184b45.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">3000 грн</h5>
+              <p class="card-text fw-light">
+                кошеня регдол, дівчинка, 2 місяці
+                <br>
+                Дніпро
+              </p>
+              <a href="#" class="btn btn-secondary">придбати</a>
+            </div>
+          </div>
+        </aside>
+
+        <div class="col-12 col-md-6 p-4 d-flex justify-content-between aling-items-center">
+          <div class="container-fluid row  ">
+
+            <div class="col">
+              <div class="card align-self-center shadow" style="width: 20rem">
+                <img src="https://i.pinimg.com/564x/bb/ef/b5/bbefb56abaf7efe720d8eb0acaa4d745.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">2500 грн</h5>
+                  <p class="card-text fw-light">
+                    пухнасте риже кошеня, дівчинка, 2 місяці
+                    <br>
+                    Дарницький район, Київ
+                  </p>
+                  <a href="#" class="btn btn-secondary">придбати</a>
+                </div>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="card align-self-center shadow " style="width: 20rem">
+              <img src="https://i.pinimg.com/564x/d0/94/02/d094022dbbecba3075263a0eb3b43226.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">2500 грн</h5>
+                <p class="card-text fw-light">
+                 без породи, ласкова дівчинка, 3 місяці
+                 <br>
+                 Вінниця
+                </p>
+                <a href="#" class="btn btn-secondary">придбати</a>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+        <aside class="aside col-12 col-md-3 d-flex ">
+        
+          <div class="card align-self-center shadow" style="width: 20rem">
+            <img src="https://i.pinimg.com/564x/55/48/35/554835a0f8cbe10b5818366cc0c463a6.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">2000 грн</h5>
+              <p class="card-text fw-light">
+                без породи, дружелюбний, 3 місяці
+                <br>
+                Сумська обл.
+              </p>
+              <a href="#" class="btn btn-secondary">придбати</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section row ">
+
+        <aside class="aside col-12 col-md-3 d-flex justify-content-center aling-items-center ">
+          <div class="card align-self-center shadow" style="width: 20rem">
+            <img src="https://i.pinimg.com/564x/10/c2/cd/10c2cd11835587b24fef0d5dacba0b10.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">2800 грн</h5>
+              <p class="card-text fw-light">
+                кошеня регдол, хлопчик, 6 місяців
+                <br>
+                Оболонський район, Київ
+              </p>
+              <a href="#" class="btn btn-secondary">придбати</a>
+            </div>
+          </div>
+        </aside>
+
+        <div class="col-12 col-md-6 p-4 d-flex justify-content-between aling-items-center">
+          <div class="container-fluid row  ">
+
+            <div class="col">
+              <div class="card align-self-center shadow" style="width: 20rem">
+                <img src="https://i.pinimg.com/564x/ea/a6/a4/eaa6a41b56584e15daf74adf860a6d08.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">3100 грн</h5>
+                  <p class="card-text fw-light">
+                     кошеня британське, хлопчик, 2 місяці
+                    <br>
+                    Заболотів, Івано-Франківськ
+                  </p>
+                  <a href="#" class="btn btn-secondary">придбати</a>
+                </div>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="card align-self-center shadow " style="width: 20rem">
+              <img src="https://i.pinimg.com/564x/23/e1/1c/23e11c97a6e53a28367d9fdf914d19b5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">1800 грн</h5>
+                <p class="card-text fw-light">
+                 без породи, хлопчик, 1 місяць
+                 <br>
+                 Шевченківський район, Полтава
+                </p>
+                <a href="#" class="btn btn-secondary">придбати</a>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+        <aside class="aside col-12 col-md-3 d-flex ">
+        
+          <div class="card align-self-center shadow" style="width: 20rem">
+            <img src="https://i.pinimg.com/564x/fd/55/a7/fd55a7ca81e774ab704574185c7a0918.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">1900 грн</h5>
+              <p class="card-text fw-light">
+                без породи, гарний окрас, 2 місяці
+                <br>
+                Львів
+              </p>
+              <a href="#" class="btn btn-secondary">придбати</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      
+    </main>
+    <footer class="footer ">
+      <div class="container-fluid row">
+        <nav class="navbar navbar-dark bg-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand fs-3" href="#">Cat.sale</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
     </footer>
     <script
